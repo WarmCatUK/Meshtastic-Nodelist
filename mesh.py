@@ -38,7 +38,7 @@ def parse_node_info(node_info):
                 'latitude': node.get('position', {}).get('latitude', None),
                 'longitude': node.get('position', {}).get('longitude', None)
             },
-            'hopsAway': node.get('hopsAway', 'Direct/UnKnown'),
+            'hopsAway': node.get('hopsAway', 'Direct/Unknown'),
             'lastHeard': node.get('lastHeard', 99999)
         })
     print("Node info parsed.")
